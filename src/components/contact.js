@@ -8,7 +8,10 @@ const Contact = () => {
       <p className="mt-2 max-w-2xl text-base leading-6 text-gray-500">
         I added the form below, just in case you would like to reach me
       </p>
-      <form id="contact" name="contact" method="POST" data-netlify="true">
+      <form id="contact"  method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+        
         <p className="mt-2">
           <label className="cursor-pointer">Your Name: 
             <input type="text" name="name" 
