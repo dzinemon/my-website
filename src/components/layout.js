@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import { Helmet } from "react-helmet"
+
 import Header from "./header"
 import Hero from "./hero"
 import Services from "./services"
@@ -31,6 +33,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>{data.site.siteMetadata?.title || `Title`}</title>
+          <meta 
+            name="description" 
+            content="I am Andrii web developer from Ukraine, welcome to my website"></meta>
+          <link rel="canonical" href="https://andrii-on.netlify.app/" />
+        </Helmet>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Hero />
       <Services />
