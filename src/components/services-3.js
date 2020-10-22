@@ -1,8 +1,8 @@
 import React from "react"
 
-import GithubImage from "../images/Github.png"
-import GitlabImage from "../images/Gitlab.png"
-import BitbucketImage from "../images/Bitbucket.png"
+import GithubImage from "../images/github.png"
+import GitlabImage from "../images/gitlab.png"
+import BitbucketImage from "../images/bitbucket.png"
 
 const ServicesThree = () => (
   <div className="container max-w-5xl mx-auto my-4 rounded bg-white">
