@@ -1,0 +1,6 @@
+- title: "Migrate / Create / Update"
+  paragraph: "web apps using popular static site generators:"
+  items:
+    - Hugo
+    - Gatsby
+    - Jekyll
