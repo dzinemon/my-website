@@ -8,17 +8,17 @@ const Footer = () => {
       <div className="container text-center mx-auto">
         {new Date().getFullYear()}, Find me on 
           {` `}
-        <a className="text-blue-600 hover:text-blue-400"
+        <a className="text-blue-800 hover:underline font-bold"
           target="_blank"
           rel="noreferrer"
           href="https://twitter.com/andriisha">Twitter</a>,
           {` `}
-        <a className="text-blue-600 hover:text-blue-400"
+        <a className="text-blue-800 hover:underline font-bold"
           target="_blank"
           rel="noreferrer"
           href="https://github.com/dzinemon">Github</a>,
           {` `}
-        <a className="text-blue-600 hover:text-blue-400"
+        <a className="text-blue-800 hover:underline font-bold"
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/andrii-sharapatov/">Linkedin</a>
@@ -27,7 +27,7 @@ const Footer = () => {
         <p>This website is created using 
           {` `}
           <a 
-            className="text-blue-600 hover:text-blue-400"
+            className="text-blue-800 hover:underline font-bold"
             href="https://www.gatsbyjs.com/">Gatsby
           </a>
         </p>
