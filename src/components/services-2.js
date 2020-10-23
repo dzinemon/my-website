@@ -19,9 +19,9 @@ const ServicesTwo = () => (
         </div>
       </div>
       <div className="w-5/12">
-        <h3 
+        <h2 
           className="text-xl leading-8 font-semibold font-display text-gray-900 sm:text-2xl sm:leading-7 mb-2"
-        >Templating / Prototyping</h3>
+        >Templating / Prototyping</h2>
         <p className="mb-2">using modern CSS Frameworks:</p>
         <ul className="list-disc list-inside ml-30">
           <li>Bootstrap</li>

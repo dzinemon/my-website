@@ -5,7 +5,7 @@ const Contact = () => {
     <div className="container max-w-5xl mx-auto my-4 rounded bg-white flex justify-center px-2">
     <div className="w-full sm:w-1/2">
       <h2 className="text-2xl leading-8 font-semibold font-display text-gray-900 sm:text-3xl sm:leading-9">Contact me</h2>
-      <p className="mt-2 max-w-2xl text-base leading-6 text-gray-600">
+      <p className="mt-2 max-w-2xl text-base leading-6 text-gray-700">
         I added the form below, just in case you would like to reach me
       </p>
       <form id="contact"  method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">

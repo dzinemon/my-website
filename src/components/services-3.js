@@ -8,9 +8,9 @@ const ServicesThree = () => (
   <div className="container max-w-5xl mx-auto my-4 rounded bg-white">
     <div className="flex sm:flex-row flex-row-reverse justify-around items-center">
       <div className="w-5/12">
-        <h3 
+        <h2 
           className="text-xl leading-8 font-semibold font-display text-gray-900 sm:text-2xl sm:leading-7 mb-2"
-        >Using code hosting platforms</h3>
+        >Using code hosting platforms</h2>
         <p className="mb-2">for version control and collaboration:</p>
         <ul className="list-disc list-inside ml-30">
           <li>Bitbucket</li>
