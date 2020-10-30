@@ -81,10 +81,9 @@ const OtherServices = () => (
           </div>
 
           <div className="bg-gray-800 text-white p-4 sm:p-10 rounded-md">
-          <p className="mb-2 font-semibold">I am able to grasp new concepts and tools quickly
-          </p>
-       
-            
+            <p className="mb-2 font-semibold">Keen to learn and develop</p>
+            <p className="mb-2">I am able to grasp new concepts and tools quickly
+            </p>
           </div>
       </div>
   </div>
