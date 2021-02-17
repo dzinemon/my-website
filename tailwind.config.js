@@ -1,10 +1,6 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
   purge: {
-    enabled: true,
+    enabled: false,
     content: [
     "./src/**/*.js", 
     "./src/**/*.jsx", 
@@ -12,7 +8,9 @@ module.exports = {
     "./src/**/*.tsx"
   ]},
   theme: {
-    extend: {},
+    container: {
+      padding: '1rem',
+    },
   },
   variants: {},
   plugins: [],
