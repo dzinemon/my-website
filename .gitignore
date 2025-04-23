@@ -67,3 +67,17 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# IDE specific files
+.idea/
+.vscode/
+*.sw*
+
+# Local Netlify folder
+.netlify/
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz

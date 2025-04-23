@@ -3,9 +3,9 @@ module.exports = {
     title: `Andrii's website`,
     description: `Human, learner, maintainer`,
     author: `@gatsbyjs`,
+    siteUrl: `https://andrii-on.netlify.app`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -28,6 +28,29 @@ module.exports = {
         icon: `src/images/andrew-fav.png`, // This path is relative to the root of the site.
       },
     },
+    // Added gatsby-plugin-sitemap for dynamic sitemap generation
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        query: `{
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }`,
+        resolveSiteUrl: () => `https://andrii-on.netlify.app`,
+        resolvePages: ({ allSitePage: { nodes } }) => nodes,
+        serialize: ({ path }) => ({ url: path }),
+      },
+    },
+    "gatsby-plugin-typescript",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
