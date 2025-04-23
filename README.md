@@ -62,6 +62,8 @@ If you want to run this project locally:
 
 This site is built automatically on changes to the main branch and deployed to production.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aee78747-075a-4cf6-84df-f65fab6b9bcd/deploy-status)](https://app.netlify.com/sites/andrii-on/deploys)
+
 ## 📝 License
 
 This project is licensed under the 0BSD License.
