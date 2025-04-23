@@ -60,9 +60,7 @@ If you want to run this project locally:
 
 ## 🔄 Deployment
 
-This site is built automatically on changes to the main branch and deployed via:
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/status-badge/deploy-status)](https://app.netlify.com/sites/andrii-sharapatov/deploys)
+This site is built automatically on changes to the main branch and deployed to production.
 
 ## 📝 License
 
@@ -70,4 +68,4 @@ This project is licensed under the 0BSD License.
 
 ## 📧 Contact
 
-Feel free to reach out to me at [andriisharapatov@gmail.com](mailto:andriisharapatov@gmail.com) or visit my website at [andriisharapatov.com](https://andriisharapatov.com).
+Feel free to reach out to me at [andriisharapatov@gmail.com](mailto:andriisharapatov@gmail.com) or visit my website at [andrii-on.netlify.app](https://andrii-on.netlify.app/).
