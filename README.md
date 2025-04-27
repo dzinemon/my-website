@@ -41,7 +41,7 @@ If you want to run this project locally:
    ```
 
    The site will be available at `http://localhost:8000`.
-   
+
    You can also explore the GraphQL data layer at `http://localhost:8000/___graphql`.
 
 ## 🏗️ Project Structure

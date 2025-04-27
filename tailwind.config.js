@@ -1,10 +1,5 @@
 module.exports = {
-  content: [
-    "./src/**/*.js", 
-    "./src/**/*.jsx", 
-    "./src/**/*.ts", 
-    "./src/**/*.tsx"
-  ],
+  content: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   darkMode: 'class', // Enable class-based dark mode
   theme: {
     container: {
@@ -51,7 +46,7 @@ module.exports = {
           800: '#262626',
           900: '#171717',
           950: '#0a0a0a',
-        }
+        },
       },
       fontFamily: {
         sans: [
@@ -92,7 +87,7 @@ module.exports = {
         'slide-up': 'slideUp 0.5s ease-out',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'bounce-slow': 'bounce 3s infinite',
-        'float': 'float 6s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -109,25 +104,52 @@ module.exports = {
         },
       },
       transitionProperty: {
-        'height': 'height',
-        'spacing': 'margin, padding',
-        'width': 'width',
-        'border': 'border-width, border-color',
+        height: 'height',
+        spacing: 'margin, padding',
+        width: 'width',
+        border: 'border-width, border-color',
       },
       spacing: {
-        '72': '18rem',
-        '84': '21rem',
-        '96': '24rem',
+        72: '18rem',
+        84: '21rem',
+        96: '24rem',
       },
       boxShadow: {
-        'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
-        'button': '0 2px 10px rgba(14, 165, 233, 0.3)',
-        'card': '0 10px 30px rgba(0, 0, 0, 0.05)',
+        soft: '0 4px 20px rgba(0, 0, 0, 0.08)',
+        button: '0 2px 10px rgba(14, 165, 233, 0.3)',
+        card: '0 10px 30px rgba(0, 0, 0, 0.05)',
       },
       borderRadius: {
-        'xl': '1rem',
+        xl: '1rem',
         '2xl': '1.5rem',
         '3xl': '2rem',
+      },
+      backgroundImage: theme => ({
+        'dotted-light': 'radial-gradient(#fff 0.5px, transparent 0)',
+        'dotted-dark': 'radial-gradient(#000 0.5px, transparent 0)',
+        'cell-light': `linear-gradient(to right, ${theme(
+          'colors.neutral.200'
+        )} 1px, transparent 1px), linear-gradient(to bottom, ${theme(
+          'colors.neutral.200'
+        )} 1px, transparent 1px), linear-gradient(${theme('colors.white', '#fff')}, ${theme(
+          'colors.white',
+          '#fff'
+        )})`,
+        'cell-dark': `linear-gradient(to right, ${theme(
+          'colors.neutral.700'
+        )} 1px, transparent 1px), linear-gradient(to bottom, ${theme(
+          'colors.neutral.700'
+        )} 1px, transparent 1px), linear-gradient(${theme('colors.black', '#000')}, ${theme(
+          'colors.black',
+          '#000'
+        )})`,
+      }),
+      backgroundSize: {
+        dotted: '20px 20px',
+        cell: '20px 20px',
+      },
+      backgroundPosition: {
+        // dotted: 'center',
       },
     },
   },
@@ -142,4 +164,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
