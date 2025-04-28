@@ -38,7 +38,10 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-24 bg-gray-50/90 dark:bg-gray-900/90">
+    <div
+      id="contact"
+      className="bg-gradient-to-tr from-gray-50 via-gray-100/30 to-gray-100 dark:from-gray-900 dark:via-gray-900/30 dark:via-gray-900 dark:to-black py-16 lg:py-24"
+    >
       <SectionHeading
         title="Get In Touch"
         subtitle="Have a question or want to work together? Fill out the form below!"

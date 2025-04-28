@@ -51,7 +51,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ title, subtitle, alignm
 
       {subtitle && (
         <motion.p
-          className="text-lg md:text-xl text-slate-700 dark:text-slate-100 max-w-2xl"
+          className="text-base md:text-lg text-slate-700 dark:text-slate-100 max-w-2xl"
           variants={itemVariants}
         >
           {subtitle}

@@ -140,7 +140,7 @@ const AnimatedLogo: React.FC<AnimatedLogoProps> = ({ className = '' }) => {
       {/* 'A' letter in the center that appears at the end of the animation */}
       <motion.text
         x="18"
-        y="18"
+        y="19"
         textAnchor="middle"
         dominantBaseline="middle"
         fontSize="22"

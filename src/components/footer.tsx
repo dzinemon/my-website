@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-700 dark:via-gray-900 dark:to-black px-4 transition-colors duration-500">
+    <footer className="p-4 bg-gradient-to-tl from-gray-300/90 via-gray-300 to-gray-100 dark:from-black dark:to-black/90 transition-colors duration-500">
       <div className="container text-center mx-auto text-slate-700 dark:text-slate-100">
         <p>
           {new Date().getFullYear()},{` `}

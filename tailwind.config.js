@@ -125,8 +125,16 @@ module.exports = {
         '3xl': '2rem',
       },
       backgroundImage: theme => ({
-        'dotted-light': 'radial-gradient(#fff 0.5px, transparent 0)',
-        'dotted-dark': 'radial-gradient(#000 0.5px, transparent 0)',
+        'dotted-light': `radial-gradient(${theme(
+          'colors.gray.700'
+        )} 0.5px, transparent 0), linear-gradient(${theme('colors.slate.900')}, ${theme(
+          'colors.slate.900'
+        )})`,
+        'dotted-dark': `radial-gradient(${theme(
+          'colors.neutral.200'
+        )} 0.5px, transparent 0), linear-gradient(${theme('colors.white')}, ${theme(
+          'colors.white'
+        )})`,
         'cell-light': `linear-gradient(to right, ${theme(
           'colors.neutral.200'
         )} 1px, transparent 1px), linear-gradient(to bottom, ${theme(
@@ -149,7 +157,7 @@ module.exports = {
         cell: '20px 20px',
       },
       backgroundPosition: {
-        // dotted: 'center',
+        dotted: '4.5px 0px',
       },
     },
   },

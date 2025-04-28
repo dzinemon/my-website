@@ -4,7 +4,10 @@ import SectionHeading from './SectionHeading';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-gray-50/90 dark:bg-gray-900/90 relative">
+    <section
+      id="about"
+      className="bg-gradient-to-tr from-gray-50 via-gray-100/30 to-gray-100 dark:from-gray-900 dark:via-gray-900/30 dark:via-gray-900 dark:to-black py-16 lg:py-24 relative"
+    >
       <SectionHeading title="About Me" alignment="left" />
 
       <div className="container max-w-6xl mx-auto px-4 mb-12 text-left">
@@ -22,7 +25,7 @@ const About: React.FC = () => {
             </p>{' '}
             <p className="text-base lg:text-lg leading-relaxed">
               My expertise spans modern JavaScript frameworks like React and Next.js, as well as
-              robust back-end solutions with PostgreSQL and various CMS platforms.
+              back-end solutions and various CMS platforms.
             </p>{' '}
             <p className="text-base lg:text-lg leading-relaxed">
               I have a strong passion for artificial intelligence, regularly integrating advanced AI

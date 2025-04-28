@@ -1,43 +1,83 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
 import SectionHeading from './SectionHeading';
+// Import React Icons
+import {
+  SiNextdotjs,
+  SiGatsby,
+  SiReact,
+  SiContentful,
+  SiGhost,
+  SiTailwindcss,
+  SiBootstrap,
+  SiBulma,
+} from 'react-icons/si';
+import {
+  AiOutlineRobot,
+  AiOutlineComment,
+  AiOutlineFileText,
+  AiOutlineCloud,
+} from 'react-icons/ai';
+import { BiRefresh, BiShield, BiRocket, BiBuildingHouse } from 'react-icons/bi';
 
 // Service data for consistency and easier maintenance
 const servicesData = [
   {
     id: 'web-development',
     title: 'Web Development',
-    description: 'Custom, responsive web solutions with modern technologies',
-    items: ['Next.js', 'Gatsby', 'React', 'Static Sites'],
-    subtext: 'Specializing in fast, SEO-friendly websites and web applications',
+    description:
+      'Custom, responsive web solutions with modern technologies. Specializing in fast, SEO-friendly websites and web applications that deliver exceptional user experiences and meet business objectives.',
+    items: [
+      { name: 'Next.js', icon: <SiNextdotjs /> },
+      { name: 'Gatsby', icon: <SiGatsby /> },
+      { name: 'React', icon: <SiReact /> },
+      { name: 'Static Sites', icon: <BiBuildingHouse /> },
+    ],
   },
   {
     id: 'ai-integration',
     title: 'AI Solutions',
-    description: 'Custom AI integrations to enhance your digital products',
-    items: ['RAG Systems', 'Chatbots', 'Content Generation'],
-    subtext: 'Leveraging OpenAI, Anthropic, and Perplexity APIs for intelligent applications',
+    description:
+      'Custom AI integrations to enhance your digital products. Leveraging OpenAI, Anthropic, and Perplexity APIs for intelligent applications that transform how your users interact with your business.',
+    items: [
+      { name: 'RAG Systems', icon: <AiOutlineFileText /> },
+      { name: 'Chatbots', icon: <AiOutlineComment /> },
+      { name: 'Content Generation', icon: <AiOutlineRobot /> },
+    ],
   },
   {
     id: 'cms-integration',
     title: 'CMS Integration',
-    description: 'Seamless content management solutions for easy updates',
-    items: ['Contentful', 'CloudCannon', 'GhostCMS'],
-    subtext: 'Empower your team to manage content without technical knowledge',
+    description:
+      'Seamless content management solutions for easy updates. Empower your team to manage content without technical knowledge, ensuring your website stays fresh and relevant with minimal overhead.',
+    items: [
+      { name: 'Contentful', icon: <SiContentful /> },
+      { name: 'CloudCannon', icon: <AiOutlineCloud /> },
+      { name: 'GhostCMS', icon: <SiGhost /> },
+    ],
   },
   {
     id: 'ui-design',
     title: 'UI Implementation',
-    description: 'Modern, responsive interfaces with attention to detail',
-    items: ['Tailwind', 'Bootstrap', 'Bulma'],
-    subtext: 'Pixel-perfect implementation of designs with modern CSS frameworks',
+    description:
+      'Modern, responsive interfaces with attention to detail. Pixel-perfect implementation of designs with modern CSS frameworks that look great on any device and provide an intuitive user experience.',
+    items: [
+      { name: 'Tailwind', icon: <SiTailwindcss /> },
+      { name: 'Bootstrap', icon: <SiBootstrap /> },
+      { name: 'Bulma', icon: <SiBulma /> },
+    ],
   },
   {
     id: 'maintenance',
     title: 'Maintenance & Support',
-    description: 'Ongoing technical support and website improvements',
-    items: ['Updates', 'Performance', 'Security', 'Features'],
-    subtext: 'Keep your website running smoothly with regular maintenance',
+    description:
+      'Ongoing technical support and website improvements. Keep your website running smoothly with regular maintenance, security updates, performance optimizations, and feature enhancements.',
+    items: [
+      { name: 'Updates', icon: <BiRefresh /> },
+      { name: 'Performance', icon: <BiRocket /> },
+      { name: 'Security', icon: <BiShield /> },
+      { name: 'Features', icon: <AiOutlineFileText /> },
+    ],
   },
 ];
 
@@ -90,7 +130,10 @@ const processSteps = [
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-24 bg-gray-50/90 dark:bg-gray-900/90">
+    <section
+      id="services"
+      className="bg-gradient-to-tr from-gray-50 via-gray-100/30 to-gray-100 dark:from-gray-900 dark:via-gray-900/30 dark:via-gray-900 dark:to-black py-16 lg:py-24"
+    >
       <SectionHeading
         title="Services"
         subtitle="Specialized web development and AI integration solutions to transform your digital presence. Combining modern technologies with cutting-edge AI capabilities to create intelligent, responsive, and powerful digital experiences."
@@ -100,9 +143,6 @@ const Services: React.FC = () => {
       {/* Services section */}
       <div className="container max-w-6xl mx-auto px-4">
         <div className="space-y-8">
-          <h3 className="text-2xl md:text-3xl font-semibold text-slate-800 dark:text-slate-50 mb-8 transition-colors duration-300">
-            What I Offer
-          </h3>
           <div className="space-y-16">
             {servicesData.map(service => (
               <ServiceCard
@@ -110,7 +150,6 @@ const Services: React.FC = () => {
                 title={service.title}
                 description={service.description}
                 items={service.items}
-                subtext={service.subtext}
               />
             ))}
           </div>
@@ -126,7 +165,7 @@ const Services: React.FC = () => {
               <p className="text-lg text-slate-700 dark:text-slate-100 mb-6 transition-colors duration-300">
                 My recent projects showcase expertise in developing advanced AI solutions:
               </p>
-              <ul className="space-y-6">
+              <ul className="space-y-6 list-disc">
                 <li className="text-lg text-slate-700 dark:text-slate-100 transition-colors duration-300">
                   <span className="font-semibold">
                     Retrieval-Augmented Generation (RAG) Systems

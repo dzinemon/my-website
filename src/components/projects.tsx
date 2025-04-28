@@ -817,7 +817,10 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="py-24 bg-gray-50/90 dark:bg-gray-900/90">
+    <section
+      id="projects"
+      className="bg-gradient-to-tr from-gray-50 via-gray-100/30 to-gray-100 dark:from-gray-900 dark:via-gray-900/30 dark:via-gray-900 dark:to-black py-16 lg:py-24"
+    >
       <SectionHeading
         title="Projects"
         subtitle="A selection of my recent development work"
@@ -1086,7 +1089,7 @@ const Projects: React.FC = () => {
                     </p>
 
                     {project.association && (
-                      <p className="mb-3 text-sm text-blue-600 dark:text-blue-400">
+                      <p className="mb-3 text-sm text-gray-700 dark:text-gray-200">
                         {project.association}
                       </p>
                     )}
@@ -1104,7 +1107,7 @@ const Projects: React.FC = () => {
                           {project.technologies.map((tech, techIndex) => (
                             <span
                               key={techIndex}
-                              className="px-2 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded dark:bg-blue-900 dark:text-blue-200"
+                              className="px-2 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded dark:bg-blue-900 dark:text-blue-100"
                             >
                               {tech}
                             </span>

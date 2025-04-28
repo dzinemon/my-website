@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({
   return (
     <div className="bg-cell-dark dark:bg-cell-light bg-cell bg-cell bg-center">
       <div
-        className={`min-h-80 flex items-center justify-center ${gradient} px-4 transition-colors duration-500 pt-36 pb-24`}
+        className={`min-h-80 flex items-center justify-center ${gradient} transition-colors duration-500 lg:pt-36 pt-24 lg:pb-24 pb-16`}
       >
         <div className="container max-w-6xl mx-auto">
           <motion.div
@@ -78,16 +78,26 @@ const Hero: React.FC<HeroProps> = ({
                     <>
                       {line.split('Andrii')[0]}
                       <motion.span
-                        className="text-emerald-800 dark:text-emerald-200"
+                        className="bg-clip-text text-transparent bg-gradient-to-b from-slate-800 via-slate-800 to-emerald-600 dark:from-slate-200 dark:via-slate-200 dark:to-emerald-300"
                         whileHover={{
                           scale: 1.05,
                           transition: { type: 'spring', stiffness: 300 },
                         }}
                       >
-                        Andrii
+                        {line}
                       </motion.span>
                       {line.split('Andrii')[1]}
                     </>
+                  ) : i === 1 ? (
+                    <motion.span
+                      className="bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-emerald-600 dark:from-slate-200 dark:to-emerald-300"
+                      whileHover={{
+                        scale: 1.05,
+                        transition: { type: 'spring', stiffness: 300 },
+                      }}
+                    >
+                      {line}
+                    </motion.span>
                   ) : (
                     line
                   )}
