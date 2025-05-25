@@ -9,7 +9,7 @@ import Layout from '../components/layout';
 const ContactPage = ({ location }) => (
   <Layout location={location}>
     <Hero
-      title={['Contact Me', 'Get in Touch']}
+      title={["Let's", 'Connect']}
       tagline="Ready to Start a Project?"
       description="Have a project in mind or questions about my services? I'd love to hear from you. Let's discuss how I can help bring your ideas to life."
       gradient="bg-gradient-to-br from-gray-100/90 via-gray-300 to-gray-300 dark:from-gray-700/90 dark:via-gray-900 dark:via-gray-900 dark:to-black"
