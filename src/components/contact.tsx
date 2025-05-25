@@ -56,7 +56,7 @@ const Contact = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <motion.form
+          <form
             id="contact-form"
             method="post"
             netlify-honeypot="bot-field"
@@ -73,8 +73,7 @@ const Contact = () => {
               >
                 Your Name
               </label>
-              <motion.input
-                whileFocus={{ scale: 1.01 }}
+              <input
                 type="text"
                 name="name"
                 id="name"
@@ -88,8 +87,7 @@ const Contact = () => {
               >
                 Your Email
               </label>
-              <motion.input
-                whileFocus={{ scale: 1.01 }}
+              <input
                 type="email"
                 name="email"
                 id="email"
@@ -104,13 +102,12 @@ const Contact = () => {
               >
                 Message
               </label>
-              <motion.textarea
-                whileFocus={{ scale: 1.01 }}
+              <textarea
                 name="message"
                 id="message"
                 rows={5}
                 className="bg-gray-100 dark:bg-gray-700 focus:bg-white dark:focus:bg-gray-600 focus:border-emerald-600 dark:focus:border-emerald-400 border-2 border-gray-300 dark:border-gray-600 p-3 form-input block w-full rounded-md text-slate-800 dark:text-slate-100 transition duration-200 ease-in-out"
-              ></motion.textarea>
+              ></textarea>
             </motion.div>
             <motion.div variants={itemVariants} className="pt-2">
               <motion.button
@@ -124,7 +121,7 @@ const Contact = () => {
                 Send Message
               </motion.button>
             </motion.div>
-          </motion.form>
+          </form>
         </motion.div>
       </div>
     </div>
