@@ -235,19 +235,20 @@ const Services: React.FC = () => {
               <ol className="list-decimal list-inside space-y-6">
                 <li className="text-lg text-slate-700 dark:text-slate-100 transition-colors duration-300">
                   <span className="font-semibold">Get in touch</span> - Reach out through the
-                  contact form below with a brief description of your project
+                  contact form below with a brief description of your project.
                 </li>
                 <li className="text-lg text-slate-700 dark:text-slate-100 transition-colors duration-300">
-                  <span className="font-semibold">Free consultation</span> - We'll schedule a call
-                  to discuss your needs in detail
+                  <span className="font-semibold">Discovery Call</span> - We'll schedule a brief,
+                  no-obligation call to discuss your project at a high level, determine if we're a
+                  good fit, and explore potential solutions.
                 </li>
                 <li className="text-lg text-slate-700 dark:text-slate-100 transition-colors duration-300">
-                  <span className="font-semibold">Proposal</span> - I'll provide a detailed proposal
-                  with timeline and pricing
+                  <span className="font-semibold">Detailed Proposal</span> - If we both agree to
+                  move forward, I'll provide a detailed proposal with a timeline and pricing.
                 </li>
                 <li className="text-lg text-slate-700 dark:text-slate-100 transition-colors duration-300">
                   <span className="font-semibold">Get started</span> - Once approved, we'll begin
-                  the development process
+                  the development process.
                 </li>
               </ol>
               <div className="mt-6">
