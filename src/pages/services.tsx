@@ -3,7 +3,6 @@ import { WrenchIcon } from '@heroicons/react/24/outline';
 import Separator from '../components/common/Separator';
 import Hero from '../components/hero';
 import Layout from '../components/layout';
-import OtherServices from '../components/other-services';
 import Services from '../components/services';
 
 const ServicesPage = ({ location }) => (

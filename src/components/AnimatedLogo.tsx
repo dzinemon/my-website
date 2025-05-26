@@ -148,7 +148,7 @@ const AnimatedLogo: React.FC<AnimatedLogoProps> = ({ className = '' }) => {
         initial="hidden"
         animate="visible"
         variants={letterVariant}
-        className="f dark:fill-emerald-700 fill-emerald-50"
+        className="fill-emerald-50 dark:fill-emerald-700"
       >
         A
       </motion.text>
